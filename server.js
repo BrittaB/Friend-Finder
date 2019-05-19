@@ -1,10 +1,10 @@
 // Require/import the HTTP module
-var http = require("http");
-var app = require("express");
-var path = require("path");
+const http = require("http");
+const app = require("express");
+const path = require("path");
 
 // Define a port to listen for incoming requests
-var PORT = 8080;
+const PORT = 8080;
 
 // Create a generic function to handle requests and responses
 function handleRequest(request, response) {
@@ -15,7 +15,7 @@ function handleRequest(request, response) {
 
 // Use the Node HTTP package to create our server.
 // Pass the handleRequest function to empower it with functionality.
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 
 
