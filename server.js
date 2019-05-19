@@ -1,5 +1,7 @@
 // Require/import the HTTP module
 var http = require("http");
+var express = require("express");
+var path = require("path");
 
 // Define a port to listen for incoming requests
 var PORT = 8080;
