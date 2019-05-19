@@ -1,6 +1,6 @@
 // Require/import the HTTP module
 var http = require("http");
-var express = require("express");
+var app = require("express");
 var path = require("path");
 
 // Define a port to listen for incoming requests
@@ -17,9 +17,9 @@ function handleRequest(request, response) {
 // Pass the handleRequest function to empower it with functionality.
 var server = http.createServer(handleRequest);
 
-// Start our server so that it can begin listening to client requests.
-server.listen(PORT, function() {
 
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
-});
+
+  // Listener
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
